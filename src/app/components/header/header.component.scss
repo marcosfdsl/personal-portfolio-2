@@ -1,0 +1,147 @@
+.header {
+  position: fixed;
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+
+  @media (min-width: 1024px) {
+    flex-direction: column;
+    width: 4vw;
+    height: 100vh;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.weather-div {
+  color: white;
+  font-size: smaller;
+  height: 100%;
+  width: 30%;
+  margin-top: 0.2rem;
+  animation: appearFromAbove 1s forwards;
+  z-index: 0;
+
+  @media (min-width: 1024px) {
+    height: 50%;
+    width: 100%;
+    margin-left: 1.2rem;
+    animation: appearFromLeft 1s forwards;
+  }
+
+  p {
+    margin-right: 0.6rem;
+    margin-top: 0.4rem;
+  }
+
+  .weather-text {
+    transition: all ease-in-out 0.5s;
+  }
+
+  .weather-info {
+    display: flex;
+    color: rgba(255, 255, 255, 0.753);
+    font-size: x-small;
+
+    @media (min-width: 1024px) {
+      margin-top: 0.4rem;
+      height: 20%;
+      width: 100%;
+      flex-direction: column;
+      font-size: small;
+    }
+  }
+
+  .weather-img {
+    height: 3rem;
+    width: 3rem;
+    margin-top: -0.4rem;
+    margin-left: -1rem;
+
+    @media (min-width: 1024px) {
+      height: 4rem;
+      width: 4rem;
+      margin-top: 0;
+      margin-left: -1.4rem;
+    }
+  }
+}
+
+.header-button {
+  width: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all ease-in-out 0.3s;
+
+  @media (min-width: 1024px) {
+    width: 100%;
+    height: 10%;
+
+    &:hover {
+      background-color: rgba(114, 114, 114, 0.164);
+    }
+  }
+
+  .header-button-icon {
+    width: 2rem;
+  }
+
+  .header-button-icon-2 {
+    width: 1.6em;
+  }
+
+  .header-button-icon,
+  .header-button-icon-2 {
+    opacity: 0;
+    animation: appearFromAbove 1s forwards;
+
+    @media (min-width: 1024px) {
+      animation: appearFromLeft 1s forwards;
+      transition: all ease-in-out 0.5s;
+    }
+  }
+
+  .google-img {
+    border-radius: 50%;
+  }
+}
+
+.empty-space {
+  width: 2%;
+
+  @media (min-width: 1024px) {
+    width: 100%;
+    height: 30%;
+  }
+}
+
+@keyframes appearFromAbove {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appearFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.hidden {
+  display: none;
+}

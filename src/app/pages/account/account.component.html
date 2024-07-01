@@ -1,0 +1,19 @@
+<div class="background">
+    <div class="container">
+      <div class="appear-1">
+        <h1>{{ "account.title" | translate }}</h1>
+      </div>
+      <div class="account-info" id="data">
+        <p>{{ "account.name" | translate }}</p>
+        <input disabled id="name" [value]="name">
+        <p>{{ "account.email" | translate }}</p>
+        <input disabled id="email" [value]="email">
+        <p>{{ "account.creditcard" | translate }}</p>
+        <input disabled id="credit-card">
+      </div>
+      <button type="button" class="btn btn-danger" (click)="logOut()">
+        {{ "account.logout" | translate }}
+      </button>
+    </div>
+  </div>
+  

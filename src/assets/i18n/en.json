@@ -1,0 +1,230 @@
+{
+  "lang": "en",
+  "title": "Marcos' Portfolio",
+  "home": {
+    "greeting": "Hello",
+    "greeting2": "! I'm",
+    "name": "Marcos Fernández de Salamanca",
+    "title": "Junior Full-Stack Developer",
+    "coffee": "Buy me a coffee:",
+    "thanks": "Payment successful. Thank you!",
+    "altsAndTitles": {
+      "picture": "Photo"
+    },
+    "metamask": {
+      "connect": "Connect MetaMask",
+      "connectedAccount": "Connected account:",
+      "paymentAccount": "Payment account:",
+      "payment": "Pay ETH",
+      "error": "Error while processing payment",
+      "success": "Payment successful"
+    }
+  },
+  "cv": {
+    "name": "Marcos Fernández de Salamanca",
+    "dateOfBirth": "11/07/2001",
+    "address": "Torrelodones, Community of Madrid",
+    "phone": "603330106",
+    "email": "mark.musicteam@hotmail.com",
+    "education": [
+      {
+        "institution": "U-Tad",
+        "location": "Las Rozas, Community of Madrid",
+        "date": "CURRENTLY ENROLLED",
+        "title": "Higher Degree in Web Development Applications",
+        "link": "https://u-tad.com/"
+      },
+      {
+        "institution": "SAE Institute Spain",
+        "location": "Madrid",
+        "date": "MAY 2022",
+        "title": "Module in audio production, mixing, and mastering",
+        "link": "https://www.sae.edu/esp/"
+      },
+      {
+        "institution": "IES Diego Velázquez",
+        "location": "Torrelodones, Community of Madrid",
+        "date": "JUNE 2020",
+        "title": "Social Sciences Baccalaureate",
+        "link": "https://www.educa2.madrid.org/web/diego-velazquez"
+      },
+      {
+        "institution": "Paisley School",
+        "location": "Oregon, United States",
+        "date": "MAY 2017",
+        "title": "Compulsory Secondary Education",
+        "link": "https://www.paisleyschooldistrict.com/"
+      }
+    ],
+    "workExperience": [
+      {
+        "position": "Waiter at",
+        "company": "Aperitoche",
+        "location": "(Las Rozas, Community of Madrid)",
+        "responsibilities": "Tasks in bar and dining areas (March-November 2023)",
+        "link": "https://www.aperitoche.com/"
+      },
+      {
+        "position": "Monitor at",
+        "company": "Roboticlab",
+        "location": "(Community of Madrid)",
+        "responsibilities": "Workshops and other activities related to robotics and programming (2022-2023)",
+        "link": "https://www.roboticlab.es/"
+      },
+      {
+        "position": "Head Waiter and Dining Room Manager at",
+        "company": "Anubis",
+        "location": "Heron City (Las Rozas, Community of Madrid)",
+        "responsibilities": "Personnel management strategy (six waiter team), administrative and security management, accounting, registration and billing, product and supplier control (February-June 2021)",
+        "link": "https://www.anubiscocteleria.com/"
+      },
+      {
+        "position": "Waiter at",
+        "company": "Anubis",
+        "location": "Xanadu (Arroyomolinos, Community of Madrid)",
+        "responsibilities": "Tasks in dining, bar, and hookah areas (January 2021)",
+        "link": "https://www.anubiscocteleria.com/"
+      },
+      {
+        "position": "Waiter at",
+        "company": "Pioneer Saloon and Restaurant",
+        "location": "(Oregon, United States)",
+        "responsibilities": "Tasks in dining, bar, and cleaning areas (2016-2017)",
+        "link": "https://maps.app.goo.gl/8pxeCAefeTtptkrj7"
+      },
+      {
+        "position": "English Teacher at",
+        "company": "AIPC Pandora",
+        "location": "(India)",
+        "responsibilities": "English teacher during a two-month volunteering period (June-July 2014)",
+        "link": "https://aipc-pandora.org/"
+      },
+      {
+        "position": "Facilitator at",
+        "company": "Torreforum",
+        "location": "(Torrelodones, Community of Madrid)",
+        "responsibilities": "Organization of workshops and events as a youth facilitator (2013-2015)",
+        "link": "https://www.torrelodones.es/juventud"
+      }
+    ],
+    "skills": [
+      {
+        "category": "Web Development",
+        "skills1": [
+          "HTML",
+          "CSS",
+          "Tailwind",
+          "Bootstrap",
+          "JavaScript",
+          "TypeScript",
+          "Java"
+        ],
+        "skills2": [
+          "Angular",
+          "Astro",
+          "Node",
+          "Express",
+          "MySQL",
+          "MongoDB",
+          "Firebase"
+        ]
+      },
+      {
+        "category": "Diploma in Professional Office Applications (Microsoft Office)",
+        "skills1": [
+          "Word",
+          "Excel",
+          "Access",
+          "Outlook",
+          "PowerPoint",
+          "OneDrive"
+        ],
+        "skills2": []
+      },
+      {
+        "category": "Ability in organization and problem-solving",
+        "skills1": [],
+        "skills2": []
+      },
+      {
+        "category": "Communication and customer advisory skills",
+        "skills1": [],
+        "skills2": []
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "level": "Advanced C1 Level",
+        "description": "certified by",
+        "certificate": "Cambridge",
+        "certificateLink": "https://drive.google.com/file/d/1rrBPt55Z9_ioAYV1FgBYAPZkLvnnX5io/view?usp=sharing"
+      }
+    ],
+    "others": {
+      "category": "Wechsler Intelligence Scale",
+      "ci": "IQ of 141",
+      "description1": "according to",
+      "evaluationReport": "evaluation report",
+      "description2": "from WISC-IV, conducted by licensed psychologist and diploma holder in Advanced Studies in Behavioral Sciences Methodology",
+      "psychologist": "Manuel J. Sueiro Abad",
+      "description3": "based on results obtained by psychologist Mónica López Flores in 2010"
+    },
+    "academicTitlesTitle": "ACADEMIC TITLES",
+    "workExperienceTitle": "WORK EXPERIENCE",
+    "skillsTitle": "SKILLS AND KNOWLEDGE",
+    "languagesTitle": "LANGUAGES",
+    "othersTitle": "OTHERS",
+    "altsAndTitles": {
+      "picture": "Photo",
+      "drivingLicenseIcon": "Driving License",
+      "carIcon": "Own Car",
+      "linkIcon": "External Link Icon"
+    }
+  },
+  "projects": [
+    {
+      "title": "Sofos E-Commerce",
+      "image": "An image about project 1 will be here",
+      "titleInfo": "Information",
+      "info": "Information about project 1 will be here"
+    },
+    {
+      "title": "Salamanca Family",
+      "image": "An image about project 2 will be here",
+      "titleInfo": "Information",
+      "info": "Information about project 2 will be here"
+    },
+    {
+      "title": "Wordle",
+      "image": "An image about project 3 will be here",
+      "titleInfo": "Information",
+      "info": "Information about project 3 will be here"
+    }
+  ],
+  "notfound": {
+    "title": "Page not found",
+    "goHome": "Go back to Home"
+  },
+  "theme": {
+    "altsAndTitles": {
+      "toggleThemeAlt": "Toggle theme"
+    }
+  },
+  "login": {
+    "title": "Log in",
+    "google": "Use Google"
+  },
+  "account": {
+    "title": "Account",
+    "logout": "Log out",
+    "name": "Name:",
+    "email": "Email:",
+    "creditcard": "Credit Card:"
+  },
+  "loading": {
+    "altsAndTitles": {
+      "gif": "Loading..."
+    }
+  }
+}

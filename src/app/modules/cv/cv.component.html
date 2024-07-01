@@ -1,0 +1,292 @@
+<div class="background flex flex-col justify-center">
+  <div class="container-cv bg-white animation">
+    <div class="text-center">
+      <header class="flex flex-col">
+        <a
+          href="https://www.linkedin.com/in/marcos-fernandez-de-salamanca/"
+          title="LinkedIn Marcos Fernández de Salamanca"
+          target="_blank"
+        >
+          <img
+            src="../../assets/img/foto-perfil-cv.webp"
+            alt="{{ 'cv.altsAndTitles.picture' | translate }} {{
+              'cv.name' | translate
+            }}"
+            title="{{ 'cv.altsAndTitles.picture' | translate }} {{
+              'cv.name' | translate
+            }}"
+            class="justify-center profile-picture transition"
+          />
+        </a>
+
+        <div>
+          <h1 class="mb-1rem font-bold">{{ "cv.name" | translate }}</h1>
+          <p class="text-sm">{{ "cv.dateOfBirth" | translate }}</p>
+          <p class="font-bold">{{ "cv.address" | translate }}</p>
+          <p class="text-sm">{{ "cv.phone" | translate }}</p>
+          <div class="mb-1rem flex justify-center">
+            <img
+              src="assets/img/svg/id-icon.svg"
+              class="car-icons"
+              alt="{{ 'cv.altsAndTitles.drivingLicenseIcon' | translate }}"
+              title="{{ 'cv.altsAndTitles.drivingLicenseIcon' | translate }}"
+            />
+            <img
+              src="assets/img/svg/car-icon.svg"
+              class="car-icons"
+              alt="{{ 'cv.altsAndTitles.carIcon' | translate }}"
+              title="{{ 'cv.altsAndTitles.carIcon' | translate }}"
+            />
+          </div>
+          <a
+            class="text-sm text-red-600 transition"
+            title="{{ 'cv.email' | translate }}"
+            href="mailto:{{ 'cv.email' | translate }}"
+            >{{ "cv.email" | translate }}</a
+          >
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <p class="font-bold title">
+            {{ "cv.academicTitlesTitle" | translate }}
+          </p>
+
+          <div
+            *ngFor="let cvEducationIndex of cvEducationIndexes()"
+            [ngClass]="{
+              'bg-red-300': cvEducationIndex === 0,
+              'bg-red-200': cvEducationIndex === 1,
+              'bg-red-100': cvEducationIndex === 2,
+              'bg-red-50': cvEducationIndex === 3
+            }"
+            class="mb-1rem text-background"
+          >
+            <div class="font-bold">
+              <a
+                class="text-red-600 transition"
+                href="{{
+                  'cv.education.' + cvEducationIndex + '.link' | translate
+                }}"
+                title="{{
+                  'cv.education.' + cvEducationIndex + '.institution'
+                    | translate
+                }}"
+                >{{
+                  "cv.education." + cvEducationIndex + ".institution"
+                    | translate
+                }}
+                <img
+                  src="assets/img/svg/link-icon.svg"
+                  class="link-icon"
+                  alt="{{ 'cv.altsAndTitles.linkIcon' | translate }}"
+                  title="{{ 'cv.altsAndTitles.linkIcon' | translate }}"
+              /></a>
+              <span>
+                |
+                {{
+                  "cv.education." + cvEducationIndex + ".location" | translate
+                }}
+                ({{
+                  "cv.education." + cvEducationIndex + ".date" | translate
+                }})</span
+              >
+            </div>
+            <p class="text-sm">
+              {{ "cv.education." + cvEducationIndex + ".title" | translate }}
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <p class="font-bold title">
+            {{ "cv.workExperienceTitle" | translate }}
+          </p>
+          <div
+            *ngFor="let cvWorkExperienceIndex of cvWorkExperienceIndexes()"
+            [ngClass]="{
+              'bg-gray-200': cvWorkExperienceIndex % 2 === 0,
+              'bg-gray-100': cvWorkExperienceIndex % 2 !== 0
+            }"
+            class="mb-1rem text-background"
+          >
+            <div class="font-bold">
+              <span
+                >{{
+                  "cv.workExperience." + cvWorkExperienceIndex + ".position"
+                    | translate
+                }}
+              </span>
+              <a
+                class="text-red-600 transition"
+                href="{{
+                  'cv.workExperience.' + cvWorkExperienceIndex + '.link'
+                    | translate
+                }}"
+                title="{{
+                  'cv.workExperience.' + cvWorkExperienceIndex + '.company'
+                    | translate
+                }}"
+                >{{
+                  "cv.workExperience." + cvWorkExperienceIndex + ".company"
+                    | translate
+                }}
+                <img
+                  src="assets/img/svg/link-icon.svg"
+                  class="link-icon"
+                  alt="{{ 'cv.altsAndTitles.linkIcon' | translate }}"
+                  title="{{ 'cv.altsAndTitles.linkIcon' | translate }}"
+              /></a>
+              <span>
+                {{
+                  "cv.workExperience." + cvWorkExperienceIndex + ".location"
+                    | translate
+                }}</span
+              >
+            </div>
+            <p class="text-sm">
+              {{
+                "cv.workExperience." +
+                  cvWorkExperienceIndex +
+                  ".responsibilities" | translate
+              }}
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <p class="font-bold title">{{ "cv.skillsTitle" | translate }}</p>
+          <div
+            *ngFor="let cvSkillsIndex of cvSkillsIndexes()"
+            [ngClass]="{
+              'bg-red-300': cvSkillsIndex === 0,
+              'bg-red-200': cvSkillsIndex === 1,
+              'bg-red-100': cvSkillsIndex === 2,
+              'bg-red-50': cvSkillsIndex === 3
+            }"
+            class="mb-1rem text-background"
+          >
+            <h2 class="font-bold">
+              {{ "cv.skills." + cvSkillsIndex + ".category" | translate }}
+            </h2>
+            <div class="info">
+              <ng-container *ngIf="cvSkillsIndex === 0">
+                <p class="text-sm">
+                  HTML <b>|</b> CSS <b>|</b> Tailwind <b>|</b> Bootstrap
+                  <b>|</b> JavaScript <b>|</b> TypeScript <b>|</b> Java
+                </p>
+                <p class="text-sm">
+                  Angular <b>|</b> Astro <b>|</b> Node <b>|</b> Express
+                  <b>|</b> MySQL <b>|</b> MongoDB <b>|</b> Firebase
+                </p>
+              </ng-container>
+              <ng-container *ngIf="cvSkillsIndex === 1">
+                <p class="text-sm">
+                  Word <b>|</b> Excel <b>|</b> Access <b>|</b> Outlook
+                  <b>|</b> PowerPoint <b>|</b> OneDrive
+                </p>
+              </ng-container>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <p class="font-bold title">{{ "cv.languagesTitle" | translate }}</p>
+          <div
+            *ngFor="let cvLanguagesIndex of cvLanguagesIndexes()"
+            class="mb-1rem bg-gray-100 text-background"
+          >
+            <h3 class="font-bold">
+              {{ "cv.languages." + cvLanguagesIndex + ".language" | translate }}
+            </h3>
+            <div class="text-sm">
+              <span
+                ><b>{{
+                  "cv.languages." + cvLanguagesIndex + ".level" | translate
+                }}</b>
+                {{
+                  "cv.languages." + cvLanguagesIndex + ".description"
+                    | translate
+                }}
+              </span>
+              <a
+                class="text-red-600 transition font-bold"
+                href="{{
+                  'cv.languages.' + cvLanguagesIndex + '.certificateLink'
+                    | translate
+                }}"
+                title="{{
+                  'cv.languages.' + cvLanguagesIndex + '.certificate'
+                    | translate
+                }}"
+                >{{
+                  "cv.languages." + cvLanguagesIndex + ".certificate"
+                    | translate
+                }}
+                <img
+                  src="assets/img/svg/link-icon.svg"
+                  class="link-icon"
+                  alt="{{ 'cv.altsAndTitles.linkIcon' | translate }}"
+                  title="{{ 'cv.altsAndTitles.linkIcon' | translate }}"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <p class="font-bold title">{{ "cv.othersTitle" | translate }}</p>
+          <div class="bg-red-100 text-background">
+            <h3 class="font-bold">{{ "cv.others.category" | translate }}</h3>
+            <div class="text-sm">
+              <span
+                ><b>{{ "cv.others.ci" | translate }}</b>
+                {{ "cv.others.description1" | translate }}
+              </span>
+              <a
+                class="text-red-600 transition font-bold"
+                href="https://drive.google.com/file/d/1f8sPZOizxck4ehamO40PH2RiF5240z__/view?usp=sharing"
+                title="{{
+                  'cv.name' | translate
+                }}'s Wechsler Intelligence Scale Evaluation Report"
+                >{{ "cv.others.evaluationReport" | translate }}
+                <img
+                  src="assets/img/svg/link-icon.svg"
+                  class="link-icon"
+                  alt="{{ 'cv.altsAndTitles.linkIcon' | translate }}"
+                  title="{{ 'cv.altsAndTitles.linkIcon' | translate }}"
+              /></a>
+              <span> {{ "cv.others.description2" | translate }}, </span>
+              <a
+                class="text-red-600 transition font-bold"
+                href="https://www.linkedin.com/in/manuel-j-sueiro-abad-145a4430/?originalSubdomain=es"
+                title="{{ 'cv.others.psychologist' | translate }}"
+                >{{ "cv.others.psychologist" | translate }}
+                <img
+                  src="assets/img/svg/link-icon.svg"
+                  class="link-icon"
+                  alt="{{ 'cv.altsAndTitles.linkIcon' | translate }}"
+                  title="{{ 'cv.altsAndTitles.linkIcon' | translate }}" /></a
+              ><span> , {{ "cv.others.description3" | translate }}</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="flex justify-center cv-download-button-container">
+      <a
+        href="https://drive.google.com/uc?export=download&id=1lbQ2cg4w9JnXDu10789xGW78cT4ex8I4"
+        title="Descargar CV"
+        class="flex justify-center bg-black transition cv-download-button"
+      >
+        <img
+          src="assets/img/svg/download-icon.svg"
+          class="link-icon"
+          alt="Botón de descarga CV"
+          title="Botón de descarga CV"
+        />
+      </a>
+    </div>
+  </div>
+</div>

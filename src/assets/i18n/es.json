@@ -1,0 +1,230 @@
+{
+  "lang": "es",
+  "title": "Portfolio Marcos",
+  "home": {
+    "greeting": "¡Hola",
+    "greeting2": "! Soy",
+    "name": "Marcos Fernández de Salamanca",
+    "title": "Desarrollador Full-Stack Junior",
+    "coffee": "Invítame a un café:",
+    "thanks": "Pago realizado. Gracias!",
+    "altsAndTitles": {
+      "picture": "Foto"
+    },
+    "metamask": {
+      "connect": "Conectar con MetaMask",
+      "connectedAccount": "Cuenta conectada:",
+      "paymentAccount": "Cuenta de pago:",
+      "payment": "Pagar ETH",
+      "error": "Error al procesar el pago",
+      "success": "Pago realizado correctamente"
+    }
+  },
+  "cv": {
+    "name": "Marcos Fernández de Salamanca",
+    "dateOfBirth": "11/07/2001",
+    "address": "Torrelodones, Comunidad de Madrid",
+    "phone": "603330106",
+    "email": "mark.musicteam@hotmail.com",
+    "education": [
+      {
+        "institution": "U-Tad",
+        "location": "Las Rozas, Comunidad de Madrid",
+        "date": "CURSANDO ACTUALMENTE",
+        "title": "Grado superior en Desarrollo de Aplicaciones Web",
+        "link": "https://u-tad.com/"
+      },
+      {
+        "institution": "SAE Institute Spain",
+        "location": "Madrid",
+        "date": "MAYO 2022",
+        "title": "Módulo en producción, mezcla y masterización de audio",
+        "link": "https://www.sae.edu/esp/"
+      },
+      {
+        "institution": "I.E.S. Diego Velázquez",
+        "location": "Torrelodones, Comunidad de Madrid",
+        "date": "JUNIO 2020",
+        "title": "Bachillerato Social",
+        "link": "https://www.educa2.madrid.org/web/diego-velazquez"
+      },
+      {
+        "institution": "Paisley School",
+        "location": "Oregón, Estados Unidos",
+        "date": "MAYO 2017",
+        "title": "Educación Secundaria Obligatoria",
+        "link": "https://www.paisleyschooldistrict.com/"
+      }
+    ],
+    "workExperience": [
+      {
+        "position": "Camarero en",
+        "company": "Aperitoche",
+        "location": "(Las Rozas, Comunidad de Madrid)",
+        "responsibilities": "Funciones en las áreas de barra y sala (marzo-noviembre 2023)",
+        "link": "https://www.aperitoche.com/"
+      },
+      {
+        "position": "Monitor en",
+        "company": "Roboticlab",
+        "location": "(Comunidad de Madrid)",
+        "responsibilities": "Talleres y otras actividades relacionadas con la robótica y la programación (2022-2023)",
+        "link": "https://www.roboticlab.es/"
+      },
+      {
+        "position": "Primer encargado y jefe de sala en",
+        "company": "Anubis",
+        "location": "Heron City (Las Rozas, Comunidad de Madrid)",
+        "responsibilities": "Estrategia del manejo de personal (plantilla de seis camareros), gestión administrativa y de seguridad, contabilidad, registro y facturación, control de productos y proveedores (febrero-junio 2021)",
+        "link": "https://www.anubiscocteleria.com/"
+      },
+      {
+        "position": "Camarero en",
+        "company": "Anubis",
+        "location": "Xanadu (Arroyomolinos, Comunidad de Madrid)",
+        "responsibilities": "Funciones en las áreas de sala, barra y cachimbas (enero 2021)",
+        "link": "https://www.anubiscocteleria.com/"
+      },
+      {
+        "position": "Camarero en",
+        "company": "Pioneer Saloon and Restaurant",
+        "location": "(Oregón, Estados Unidos)",
+        "responsibilities": "Funciones en las áreas de sala, barra y limpieza (2016-2017)",
+        "link": "https://maps.app.goo.gl/8pxeCAefeTtptkrj7"
+      },
+      {
+        "position": "Profesor de inglés en",
+        "company": "AIPC Pandora",
+        "location": "(India)",
+        "responsibilities": "Profesor de inglés durante un período de dos meses de voluntariado (junio-julio 2014)",
+        "link": "https://aipc-pandora.org/"
+      },
+      {
+        "position": "Dinamizador en",
+        "company": "Torreforum",
+        "location": "(Torrelodones, Comunidad de Madrid)",
+        "responsibilities": "Organización de talleres y eventos como dinamizador juvenil (2013-2015)",
+        "link": "https://www.torrelodones.es/juventud"
+      }
+    ],
+    "skills": [
+      {
+        "category": "Desarrollo Web",
+        "skills1": [
+          "HTML",
+          "CSS",
+          "Tailwind",
+          "Bootstrap",
+          "JavaScript",
+          "TypeScript",
+          "Java"
+        ],
+        "skills2": [
+          "Angular",
+          "Astro",
+          "Node",
+          "Express",
+          "MySQL",
+          "MongoDB",
+          "Firebase"
+        ]
+      },
+      {
+        "category": "Diplomado Ofimática Profesional (Microsoft Office)",
+        "skills1": [
+          "Word",
+          "Excel",
+          "Access",
+          "Outlook",
+          "PowerPoint",
+          "OneDrive"
+        ],
+        "skills2": []
+      },
+      {
+        "category": "Facilidad para la organización y la resolución de problemas",
+        "skills1": [],
+        "skills2": []
+      },
+      {
+        "category": "Facilidad para la comunicación y el asesoramiento a clientes",
+        "skills1": [],
+        "skills2": []
+      }
+    ],
+    "languages": [
+      {
+        "language": "Inglés",
+        "level": "Nivel C1 Advanced",
+        "description": "certificado por",
+        "certificate": "Cambridge",
+        "certificateLink": "https://drive.google.com/file/d/1rrBPt55Z9_ioAYV1FgBYAPZkLvnnX5io/view?usp=sharing"
+      }
+    ],
+    "others": {
+      "category": "Escala de inteligencia de Wechsler",
+      "ci": "CI de 141",
+      "description1": "según",
+      "evaluationReport": "informe de evaluación",
+      "description2": "de WISC-IV, realizado por el licenciado en Psicología y diplomado en Estudios Avanzados en Metodología de las Ciencias del Comportamiento",
+      "psychologist": "Manuel J. Sueiro Abad",
+      "description3": "en base a los resultados obtenidos por la psicóloga Mónica López Flores en el año 2010"
+    },
+    "academicTitlesTitle": "TÍTULOS ACADÉMICOS",
+    "workExperienceTitle": "EXPERIENCIA LABORAL",
+    "skillsTitle": "HABILIDADES Y CONOCIMIENTOS",
+    "languagesTitle": "IDIOMAS",
+    "othersTitle": "OTROS",
+    "altsAndTitles": {
+      "picture": "Foto",
+      "drivingLicenseIcon": "Carné de conducir",
+      "carIcon": "Coche propio",
+      "linkIcon": "Icono enlace externo"
+    }
+  },
+  "projects": [
+    {
+      "title": "Sofos E-Commerce",
+      "image": "Aquí habrá una imagen del proyecto 1",
+      "titleInfo": "Información",
+      "info": "Aquí habrá información del proyecto 1"
+    },
+    {
+      "title": "Familia Salamanca",
+      "image": "Aquí habrá una imagen del proyecto 2",
+      "titleInfo": "Información",
+      "info": "Aquí habrá información del proyecto 2"
+    },
+    {
+      "title": "Wordle",
+      "image": "Aquí habrá una imagen del proyecto 3",
+      "titleInfo": "Información",
+      "info": "Aquí habrá información del proyecto 3"
+    }
+  ],
+  "notfound": {
+    "title": "Página no encontrada",
+    "goHome": "Volver a Home"
+  },
+  "theme": {
+    "altsAndTitles": {
+      "toggleThemeAlt": "Cambiar tema"
+    }
+  },
+  "login": {
+    "title": "Iniciar sesión",
+    "google": "Usar Google"
+  },
+  "account": {
+    "title": "Cuenta",
+    "logout": "Cerrar sesión",
+    "name": "Nombre:",
+    "email": "Email:",
+    "creditcard": "Tarjeta de crédito:"
+  },
+  "loading": {
+    "altsAndTitles": {
+      "gif": "Cargando..."
+    }
+  }
+}

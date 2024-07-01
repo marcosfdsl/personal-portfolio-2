@@ -1,0 +1,79 @@
+<div class="header">
+  <a class="header-button" routerLink="/home" title="Home">
+    <img
+      src="assets/img/svg/home-icon.svg"
+      class="header-button-icon icon"
+      alt="Home"
+      title="Home"
+    />
+  </a>
+  <a class="header-button" routerLink="/cv" title="Curriculum">
+    <img
+      src="assets/img/svg/cv-icon.svg"
+      class="header-button-icon icon"
+      alt="Curriculum"
+      title="Curriculum"
+    />
+  </a>
+  <a class="header-button" routerLink="/portfolio" title="Portfolio">
+    <img
+      src="assets/img/svg/portfolio-icon.svg"
+      class="header-button-icon icon"
+      alt="Portfolio"
+      title="Portfolio"
+    />
+  </a>
+
+  <div class="weather-div" *ngIf="weatherData">
+    <p class="weather-text">
+      {{ weatherData.location.name }}, {{ weatherData.location.region }}
+    </p>
+    <div class="weather-info" *ngIf="weatherData.current">
+      <p class="weather-text">{{ weatherData.current.temp_c }}°C</p>
+      <p class="weather-text">{{ weatherData.current.condition.text }}</p>
+      <img
+        class="weather-img"
+        [src]="weatherData.current.condition.icon"
+        [alt]="weatherData.current.condition.text"
+      />
+    </div>
+  </div>
+
+<a class="header-button" [routerLink]="authGoogleService.isSessionActive() ? '/account' : '/'" title="Google">
+  <img
+    [src]="picture"
+    class="header-button-icon icon google-img"
+    alt="Google"
+    title="Google"
+    (load)="updatePicture(picture)"
+  />
+</a>
+
+  
+  <a
+    class="header-button"
+    href="https://github.com/marcosfdsl"
+    target="_blank"
+    title="GitHub"
+  >
+    <img
+      src="assets/img/svg/github-icon.svg"
+      class="header-button-icon-2 icon"
+      alt="GitHub"
+      title="GitHub"
+    />
+  </a>
+  <a
+    class="header-button"
+    href="https://www.linkedin.com/in/marcos-fernandez-de-salamanca/"
+    target="_blank"
+    title="Linkedin"
+  >
+    <img
+      src="assets/img/svg/linkedin-icon.svg"
+      class="header-button-icon-2 icon"
+      alt="Linkedin"
+      title="Linkedin"
+    />
+  </a>
+</div>

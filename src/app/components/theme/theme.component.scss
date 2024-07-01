@@ -1,0 +1,36 @@
+img {
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  bottom: 2.5rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    bottom: 1.5rem;
+  }
+}
+
+.animation {
+  opacity: 0;
+  animation: appearFrom0 0.5s forwards;
+}
+
+@keyframes appearFrom0 {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}

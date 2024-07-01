@@ -1,0 +1,81 @@
+.background {
+    background-image: url("../../../assets/img/fondo1.webp");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      justify-content: center;
+      align-items: center;
+  
+      .account-info {
+        display: flex;
+        flex-direction: column;
+        
+        p {
+          font-size: larger;
+        }
+
+        input {
+          color: black;
+          font-size: medium;
+          padding: 0.2rem;
+        }
+      }
+  
+      h1 {
+        margin: 0;
+        margin-top: -2rem;
+        font-size: 2rem;
+  
+        @media (min-width: 1024px) {
+          font-size: 2.4rem;
+        }
+      }
+  
+      button {
+        margin-top: 2rem;
+          font-size: medium;
+      }
+  
+      .appear-1 {
+        opacity: 0;
+        animation: appearFromAbove 1s forwards;
+      }
+  
+      .appear-2 {
+        opacity: 0;
+        animation: appearFromAbove 1s 0.5s forwards;
+      }
+  
+      @keyframes appearFromAbove {
+        from {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+  
+      @keyframes appearFrom0 {
+        from {
+          transform: scale(0);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    }
+  }
+  

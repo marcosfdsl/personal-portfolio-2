@@ -1,0 +1,24 @@
+.background {
+    background-image: url("../../../assets/img/fondo1.webp");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      color: white;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+          width: 8rem;
+          margin-top: -0.6rem;
+      }
+    }
+  }
+  

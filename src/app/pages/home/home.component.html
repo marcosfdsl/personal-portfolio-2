@@ -1,0 +1,92 @@
+<div class="background">
+  <div class="metamask">
+    <button class="metamask-connect" (click)="connectToMetamask()">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/1024px-MetaMask_Fox.svg.png"
+        alt="{{ 'home.metamask.connect' | translate }}"
+        title="{{ 'home.metamask.connect' | translate }}"
+      />
+    </button>
+    <div class="metamask-info">
+      <p class="metamask-p">
+        {{ "home.metamask.connectedAccount" | translate }}
+      </p>
+      <p class="metamask-p metamask-address metamask-connected"></p>
+
+      <p class="metamask-p">{{ "home.metamask.paymentAccount" | translate }}</p>
+      <p class="metamask-p metamask-address">
+        0xe7D618092EbC1A7Fe973A8541e2e40C5cc76671a
+      </p>
+    </div>
+    <div>
+      <input
+        *ngIf="metamaskConnected"
+        type="text"
+        placeholder="0.001"
+        [value]="inputAmountMetaMask"
+      />
+      <button
+        class="metamask-payment"
+        *ngIf="metamaskConnected"
+        (click)="metamaskPayment()"
+      >
+        {{ "home.metamask.payment" | translate }}
+      </button>
+    </div>
+    <div class="metamask-payment-result metamask-error">
+      {{ "home.metamask.error" | translate }}
+    </div>
+    <div class="metamask-payment-result metamask-success">
+      {{ "home.metamask.success" | translate }}
+    </div>
+  </div>
+
+  <img
+    aria-hidden="true"
+    (click)="openContact()"
+    class="contact-icon"
+    src="assets/img/svg/envelope-icon.svg"
+    alt="mark.musicteam@hotmail.com"
+    title="mark.musicteam@hotmail.com"
+  />
+  <div class="container">
+    <div class="appear-1">
+      <p>
+        {{ "home.greeting" | translate }}{{ name
+        }}{{ "home.greeting2" | translate }}
+      </p>
+      <h1>{{ "home.name" | translate }}</h1>
+    </div>
+    <h2 class="appear-2">{{ "home.title" | translate }}</h2>
+    <img
+      aria-hidden="true"
+      (click)="openPhoto()"
+      class="home-profile-picture"
+      src="assets/img/foto-perfil-home.webp"
+      alt="{{ 'home.altsAndTitles.picture' | translate }} {{
+        'home.name' | translate
+      }}"
+      title="{{ 'home.altsAndTitles.picture' | translate }} {{
+        'home.name' | translate
+      }}"
+    />
+
+    <p class="thanks">{{ "home.thanks" | translate }}</p>
+    <div class="scrollable-div">
+      <div>
+        <p>{{ "home.coffee" | translate }}</p>
+        <input type="text" placeholder="1.00" [value]="inputAmount" />
+        <select
+          id="currency"
+          [(ngModel)]="inputCurrency"
+          (change)="updateCurrency($event)"
+        >
+          <option *ngFor="let currency of currencies" [value]="currency">
+            {{ currency }}
+          </option>
+        </select>
+      </div>
+      <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+    </div>
+  </div>
+</div>
